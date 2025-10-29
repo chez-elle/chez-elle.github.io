@@ -78,6 +78,25 @@
         .owl-dots .owl-dot.active span {
             transform: scale(1.2);
         }
+
+
+
+        /* Small highlight chips */
+        .highlights .chip {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            padding: .45rem .7rem;
+            border-radius: 999px;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .06);
+            margin: .3rem;
+            font-size: .95rem;
+        }
+
+        .chip i {
+            color: #111;
+        }
     </style>
 </head>
 
@@ -106,15 +125,15 @@
                         vibrant historic center.
                         Perfect for up to 6 guests looking for space, privacy, and authentic Sicilian comfort.
                     </p>
-                    <ul class="feature-list list-unstyled mb-4">
-                        <li><i class="fa fa-user"></i> Up to 6 guests</li>
-                        <li><i class="fa fa-bed"></i> 2 double bed + 2 single sofa bed</li>
-                        <li><i class="fa fa-home"></i> Two separate rooms + fully equipped kitchen</li>
-                        <li><i class="fa fa-bath"></i> 1 bathroom</li>
-                        <li><i class="fa fa-wifi"></i> Fast Wi-Fi</li>
-                        <li><i class="fa fa-snowflake-o"></i> Air conditioning</li>
-                        <li><i class="fa fa-key"></i> Self check-in (smart lock)</li>
-                    </ul>
+                    <div class="highlights mb-4">
+                        <span class="chip"><i class="fa fa-user"></i> Up to 6 guests</span>
+                        <span class="chip"><i class="fa fa-bed"></i> 2 double beds + 2 single sofa beds</span>
+                        <span class="chip"><i class="fa fa-home"></i> Two separate rooms + fully equipped kitchen</span>
+                        <span class="chip"><i class="fa fa-bath"></i> 1 bathroom</span>
+                        <span class="chip"><i class="fa fa-wifi"></i> Fast Wi-Fi</span>
+                        <span class="chip"><i class="fa fa-snowflake-o"></i> Air conditioning</span>
+                        <span class="chip"><i class="fa fa-key"></i> Self check-in (smart lock)</span>
+                    </div>
                     <a href="https://www.airbnb.it/h/chez-elle-2" class="btn btn-primary mr-2 mb-2">Book on Airbnb</a>
                     <a id="wh-cta" href="#" target="_blank" rel="noopener" class="btn btn-outline-success mb-2">Chat on
                         WhatsApp</a>

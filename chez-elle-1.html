@@ -78,6 +78,23 @@
         .owl-dots .owl-dot.active span {
             transform: scale(1.2);
         }
+
+        /* Small highlight chips */
+        .highlights .chip {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            padding: .45rem .7rem;
+            border-radius: 999px;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .06);
+            margin: .3rem;
+            font-size: .95rem;
+        }
+
+        .chip i {
+            color: #111;
+        }
     </style>
 </head>
 
@@ -102,14 +119,14 @@
                     <h1 class="heading mb-3">Chez Elle 1</h1>
                     <p class="lead mb-4">A modern studio apartment just steps from Catania’s historic center — perfect
                         for up to 3 guests who value comfort, independence, and authentic Sicilian atmosphere.</p>
-                    <ul class="feature-list list-unstyled mb-4">
-                        <li><i class="fa fa-user"></i> Up to 3 guests</li>
-                        <li><i class="fa fa-bed"></i> 1 double bed + 1 single sofa bed</li>
-                        <li><i class="fa fa-bath"></i> 1 bathroom with large shower</li>
-                        <li><i class="fa fa-wifi"></i> Fast Wi-Fi</li>
-                        <li><i class="fa fa-snowflake-o"></i> Air conditioning</li>
-                        <li><i class="fa fa-key"></i> Self check-in (smart lock)</li>
-                    </ul>
+                    <div class="highlights mb-4">
+                        <span class="chip"><i class="fa fa-user"></i> Up to 3 guests</span>
+                        <span class="chip"><i class="fa fa-bed"></i> 1 double bed + 1 single sofa bed</span>
+                        <span class="chip"><i class="fa fa-bath"></i> 1 bathroom with large shower</span>
+                        <span class="chip"><i class="fa fa-wifi"></i> Fast Wi-Fi</span>
+                        <span class="chip"><i class="fa fa-snowflake-o"></i> Air conditioning</span>
+                        <span class="chip"><i class="fa fa-key"></i> Self check-in (smart lock)</span>
+                    </div>
                     <a href="https://www.airbnb.it/h/chez-elle" class="btn btn-primary mr-2 mb-2">Book on Airbnb</a>
                     <a id="wh-cta" href="#" target="_blank" rel="noopener" class="btn btn-outline-success mb-2">Chat on
                         WhatsApp</a>
@@ -372,6 +389,8 @@
             autoplayHoverPause: true
         });
     </script>
+
+
 </body>
 
 </html>
