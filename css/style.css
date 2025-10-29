@@ -553,6 +553,7 @@ textarea.form-control {
 .owl-carousel.home-slider {
   z-index: 1;
   position: relative;
+  height: 75vh;
 }
 
 .owl-carousel.home-slider .owl-nav {
